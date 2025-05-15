@@ -7,17 +7,18 @@ body{
     text-align: center;
     font-family: 'fleur de leah';
     font-size: 150px;
-    color: grey;
+    color: white;
     transition: all 2s ease;
+    opacity: 1;
 }
 #Title:hover{
-    color: white;
     font-size: 160px;
+    opacity: 0;
 }
 #prolog{
     text-align: center;
     font-size: 25px;
-    color: grey;
+    color: white;
     font-family:'playpen Sans thai' ;
 }
 #gameContainer{
@@ -26,11 +27,12 @@ body{
 }
 #welcome{
     background-color: transparent;
+    font-size: 18px;
     color: transparent;
     opacity: 0;
     border-radius: 10%;
-    margin: 50px;
-    height: 50px;
+    margin: 200px;
+    height: 200px;
     width: 150px;
     border: none;
     transition: all 2s ease-in-out; 
@@ -39,9 +41,9 @@ body{
 }
 #welcome:hover{
     opacity: 1;
-    height: 200px; width: 200px;
+    height: 400px; width: 400px;
     border-radius: 50%;
-    font-size: 40px;
+    font-size: 60px;
     color: white;
     box-shadow: 0 0 10px black;
 }
