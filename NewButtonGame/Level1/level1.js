@@ -1,6 +1,24 @@
 const messageContainer = document.getElementById('messageContainer')
 const gameContainer = document.getElementById('gameContainer')
 
+const pleaseEnterName = document.getElementById('pleaseEnterName')
+const inputName = document.getElementById('inputName')
+
+const player = {}
+
+inputName.addEventListener('keydown',(event)=>{
+    if(event.key === 'Enter'){
+        const playerName = inputName.value
+        player.name = playerName
+    gameContainer.remove(messageContainer)
+    
+    }
+
+    
+})
+
+
+
 document.addEventListener('DOMContentLoaded',() =>{
     const message = document.createElement('div')
     message.setAttribute('id', 'prolog')
@@ -15,27 +33,10 @@ document.addEventListener('DOMContentLoaded',() =>{
             }, 6000);
     }, 2000);
 })
+console.log(player.name)
 
-document.addEventListener('DOMContentLoaded', ()=>{
-    const inputContainer = document.createElement('div')
-    inputContainer.setAttribute('id', 'inputContainer')
-    inputContainer.style.opacity = '0'
-    inputContainer.style.transition = 'all 1s ease'
 
-    const getName = document.createElement('input')
-    getName.type = 'text'
-    getName.setAttribute('id', 'getName')
 
-    const type = document.createElement('div')
-    type.setAttribute('id', 'type')
-    type.textContent = "What is Your Name:"
 
-        gameContainer.append(inputContainer)
-        inputContainer.appendChild(type)
-        inputContainer.appendChild(getName)
-    setInterval(() => {
-        inputContainer.style.opacity = '1'
-    }, 4000);
-    
-    
-})
+
+

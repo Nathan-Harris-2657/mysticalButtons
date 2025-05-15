@@ -20,6 +20,7 @@ body{
     justify-self: center;
 }
 #inputContainer{
+    opacity: 0;
     display: flex;
     justify-content: center;
     column-gap: 15px;
@@ -28,24 +29,30 @@ body{
     width: 600px;
     border: solid 1px black;
     border: none;
+    transition: all 2s ease;
 }
-#type{
+#inputContainer:hover{
+    opacity: 1;
+}
+    
+
+#pleaseEnterName{
     font-size: 25px;
     font-family:'playpen Sans thai' ;
     margin-bottom: 6px;
     color: white;
 }
-#getName{
+#inputName{
     background-color: transparent;
     font-size: 50px;
     width: 200px;
-    height: 50px;
+    height: 60px;
     font-family: 'fleur de leah';
     border: none;
     color: white
     
 }
-#getName:focus{
+#inputName:focus{
     border: none;
     outline: none;
 }
