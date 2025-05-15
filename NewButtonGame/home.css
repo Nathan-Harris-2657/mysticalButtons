@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(rgb(51, 0, 51),purple ,rgb(51, 0, 51));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Title{
+    text-align: center;
+    font-family: 'fleur de leah';
+    font-size: 150px;
+    color: grey;
+    transition: all 2s ease;
+}
+#Title:hover{
+    color: white;
+    font-size: 160px;
+}
+#prolog{
+    text-align: center;
+    font-size: 25px;
+    color: grey;
+    font-family:'playpen Sans thai' ;
+}
+#gameContainer{
+    display: flex;
+    justify-content: center;
+}
+#welcome{
+    background-color: transparent;
+    color: transparent;
+    opacity: 0;
+    border-radius: 10%;
+    margin: 50px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    transition: all 2s ease-in-out; 
+    font-family:'fleur de leah';
+    box-shadow: 0 0 0;
+}
+#welcome:hover{
+    opacity: 1;
+    height: 200px; width: 200px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0 0 10px black;
+}

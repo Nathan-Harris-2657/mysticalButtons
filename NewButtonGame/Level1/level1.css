@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(rgb(51, 0, 51),purple ,rgb(51, 0, 51));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#fireMode{
+    background-color: red;
+}
