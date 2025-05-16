@@ -91,6 +91,11 @@ inputName.addEventListener("keydown", (event) => {
     }
 });
 
+b1.addEventListener('click', ()=>{
+    window.location.href = './memory/memory.html'
+})
+
+
 
 
 

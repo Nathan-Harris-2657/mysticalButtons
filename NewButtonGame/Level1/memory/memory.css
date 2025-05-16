@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(rgb(0, 166, 166),aqua,rgb(0, 166, 166));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#messageContainer{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    min-height: 200px;
+}
+.prolog{
+    text-align: center;
+    color: white;
+    font-family: 'playpen Sans thai';
+    font-size: 25px;
+    margin: 25px;
+}
