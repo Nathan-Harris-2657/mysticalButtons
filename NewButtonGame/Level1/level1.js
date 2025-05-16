@@ -94,6 +94,12 @@ inputName.addEventListener("keydown", (event) => {
 b1.addEventListener('click', ()=>{
     window.location.href = './memory/memory.html'
 })
+b2.addEventListener('click', ()=>{
+    window.location.href = './wisdom/wisdom.html'
+})
+b3.addEventListener('click', ()=>{
+    window.location.href = './speed/speed.html'
+})
 
 
 

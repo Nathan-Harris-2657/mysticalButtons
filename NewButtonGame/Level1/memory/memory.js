@@ -1,5 +1,10 @@
 const messageContainer = document.getElementById('messageContainer')
 
+const screenContainer = document.getElementById('screenContainer')
+const guessContainer = document.getElementById('guessContainer')
+const screen = document.getElementById('screen')
+const guess = document.getElementById('guess')
+
 const numbers = [2]
 
 let message;
@@ -32,4 +37,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 }, 3000);
             }, 1000);
     }, 7000);
-})
+
+    setTimeout(() => {
+        screenContainer.style.opacity = '1'
+        screen.style.opacity = '1'
+        screen.style.height = '270px'
+        screen.style.width = '320px'
+    }, 12000);
+
+    setTimeout(() => {
+        guessContainer.style.opacity = '1'
+    }, 13500);
+})  

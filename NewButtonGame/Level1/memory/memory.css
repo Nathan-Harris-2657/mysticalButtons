@@ -16,3 +16,74 @@ body{
     font-size: 25px;
     margin: 25px;
 }
+#gameContainer{
+    padding: 10px;
+    display: grid;
+    place-self: center;
+    place-content: center;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    row-gap: 15px;
+}
+#screenContainer{
+    grid-area: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 8px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+#screen{
+    display: flex;
+    background-color: azure;
+    height: 50px;
+    width: 70px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+#screen:focus{
+    outline: none;
+}
+#guessContainer{
+    grid-area: 2/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+#guess{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    transition: background-color 1s ease-in-out;
+    font-size: 35px;
+}
+#guess:Hover{
+    background-color: white;
+    
+}
+#guess:focus{
+    outline: none;
+}
+
+#textGuess{
+    color: black;
+    font-family: 'playpen Sans thai';
+    font-size: 25px;
+
+}
