@@ -20,10 +20,9 @@ const b3 = document.getElementById('b3')
 const player = []
 
 // Stores Message
-// Message storage
 let message;
 
-// Initial message setup when page loads
+
 document.addEventListener("DOMContentLoaded", () => {
     message = document.createElement("div");
     message.setAttribute("id", "prolog");
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
 });
 
-// Handle name input and replace message with greeting
+
 inputName.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         const playerName = inputName.value.trim();
@@ -52,7 +51,7 @@ inputName.addEventListener("keydown", (event) => {
             pleaseEnterName.style.display = "none";
             inputName.style.display = "none";
 
-            // Remove the previous message before adding a new one
+           
             const oldMessage = document.getElementById("prolog");
             if (oldMessage) {
                 messageContainer.removeChild(oldMessage);
@@ -63,7 +62,7 @@ inputName.addEventListener("keydown", (event) => {
                 messageContainer.removeChild(oldGreeting);
             }
 
-            // Create new message
+            
             message = document.createElement("div");
             message.setAttribute("id", "prolog2");
             message.style.opacity = "0";
