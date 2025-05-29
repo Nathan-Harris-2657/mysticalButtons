@@ -3,6 +3,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
 #messageContainer{
     display: flex;
     justify-self: center;
@@ -24,7 +26,31 @@ body{
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 300px 300px 300px;
     row-gap: 15px;
+    column-gap: 15px;
 }
+#box1{
+    grid-area: 1/1;
+    opacity: 0;
+}
+#box2{
+    grid-area: 2/1;
+    opacity: 0;
+}
+#box3{
+    grid-area: 1/3/1;
+    opacity: 0;
+}
+#box4{
+    grid-area: 2/3;
+    opacity: 0;
+    
+}
+.celeBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #screenContainer{
     grid-area: 1/2;
     display: flex;
@@ -37,15 +63,18 @@ body{
 }
 #screen{
     display: flex;
+    font-family: 'playpen Sans thai';
     background-color: azure;
     height: 50px;
     width: 70px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 35px;
+    text-align: center;
     opacity: 0;
     transition: all 1s ease;
+    color: transparent;
 }
 #screen:focus{
     outline: none;

@@ -67,7 +67,7 @@ inputName.addEventListener("keydown", (event) => {
             message.setAttribute("id", "prolog2");
             message.style.opacity = "0";
             message.style.transition = "all 2s ease";
-            message.innerHTML = `Nice to meet you, ${player.join(", ")}, please make a selection below and we will began!`;
+            message.innerHTML = `Nice to meet you ${player.join("")}, please make a selection below and we will began!`;
 
             messageContainer.appendChild(message);
 

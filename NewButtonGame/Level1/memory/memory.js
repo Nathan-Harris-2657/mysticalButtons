@@ -4,8 +4,20 @@ const screenContainer = document.getElementById('screenContainer')
 const guessContainer = document.getElementById('guessContainer')
 const screen = document.getElementById('screen')
 const guess = document.getElementById('guess')
+// Celebration Squares
+const box1 = document.getElementById('box1')
+const box2 = document.getElementById('box2')
+const box3 = document.getElementById('box3')
+const box4 = document.getElementById('box4')
+const celeBox = document.getElementsByClassName('celeBox')
 
-const numbers = [2]
+
+let numberSet1 = "1"
+let numberSet2 = "25"
+let numberSet3 = "312"
+let numberSet4 = "4817"
+let numberSet5 = "54821"
+let numberSet6 = "987694"
 
 let message;
 
@@ -49,3 +61,76 @@ document.addEventListener('DOMContentLoaded', ()=>{
         guessContainer.style.opacity = '1'
     }, 13500);
 })  
+
+setTimeout(() => {
+    screen.style.color = 'black'
+    screen.textContent = numberSet1
+    setTimeout(() => {
+        screen.textContent = ""
+    }, 500);
+    
+}, 14500);
+
+guess.addEventListener('change', ()=>{
+    if(guess.value === numberSet1){
+        screen.textContent = "Thats Correct"
+        guess.value = ""
+        numberSet1 = 'null'
+
+        box1.style.transition = 'all 1s ease'
+        box1.style.opacity = '1'
+        box1.textContent = "Correct!"
+
+        box2.style.transition = 'all 1s ease'
+        box2.style.opacity = '1'
+        box2.textContent = "Correct!!"
+
+        box3.style.transition = 'all 1s ease'
+        box3.style.opacity = '1'
+        box3.textContent = "Correct!!!"
+
+        box4.style.transition = 'all 1s ease'
+        box4.style.opacity = '1'
+        box4.textContent = "Correct!"
+        
+        
+        setTimeout(() => {
+            screen.textContent = ""
+            box1.textContent = ""
+            box2.textContent = ""
+            box3.textContent = ""
+            box4.textContent = ""
+
+        }, 3000);
+    }
+    else{
+        screen.textContent = "Wrong"
+        guess.value = ""
+
+        box1.style.transition = 'all 1s ease'
+        box1.style.opacity = '1'
+        box1.textContent = "WRONG"
+
+        box2.style.transition = 'all 1s ease'
+        box2.style.opacity = '1'
+        box2.textContent = "NOT RIGHT!!!"
+
+        box3.style.transition = 'all 1s ease'
+        box3.style.opacity = '1'
+        box3.textContent = "KEEP TRYING!!"
+
+        box4.style.transition = 'all 1s ease'
+        box4.style.opacity = '1'
+        box4.textContent = "BETTER LUCK NEXT TIME!"
+
+        setTimeout(() => {
+            screen.textContent = ""
+            box1.textContent = ""
+            box2.textContent = ""
+            box3.textContent = ""
+            box4.textContent = ""
+
+        }, 3000);
+    }
+})
+
